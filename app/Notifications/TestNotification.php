@@ -35,7 +35,7 @@ class TestNotification extends Notification implements ShouldQueue
     public function toMail(object $notifiable): MailMessage
     {
         return (new MailMessage)
-                    ->line('Aanpassing!')
+                    ->line('Aanpassing 2!')
                     ->action('Notification Action', url('/'))
                     ->line('Thank you for using our application!');
     }
